@@ -1,0 +1,23 @@
+web:
+  build: .
+  container_name: wp_web
+  links:
+    - db
+  volumes:
+    - .:/var/www/wordpress
+  ports:
+    - "80:80"
+  environment:
+    - TERM=xterm
+  dns:
+    - 8.8.8.8
+db:
+  image: tutum/mysql
+  container_name: wp_db
+  environment:
+    - MYSQL_USER=wordpress
+    - MYSQL_PASS=password
+  volumes:
+    - /mnt/sda1/var/lib/wordpress:/var/lib/mysql
+  ports:
+    - "3306:3306"

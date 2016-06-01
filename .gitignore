@@ -1,0 +1,4 @@
+.idea
+vendor/
+wp/
+composer.lock

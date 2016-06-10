@@ -22,6 +22,8 @@ create database wordpress;
 exit
 exit
 
+you can create wp-content directory in main directory and store all wp-content in there. Wordpress core is in wp directory and is not stored in this repository (.gitignore) you only store content of wp-content.
+
 Visit your wordpress website under ip of docker host
 
 example: 

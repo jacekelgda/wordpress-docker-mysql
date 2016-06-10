@@ -1,4 +1,5 @@
 .idea
 vendor/
 wp/
+wp-content/uploads/
 composer.lock

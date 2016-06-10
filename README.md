@@ -8,21 +8,27 @@ docker-compose up -d
 
 ## install vendors
 enter wp_web container 
-docker exec -it wp_web bash
+
+```docker exec -it wp_web bash```
 
 inside container run
-composer install -n
+
+```composer install -n```
 exit
 
 ## create database
 login to wp_db container and create wordpress database
-docker exec -it wp_db bash
-mysql -uwordpress -ppassword
-create database wordpress;
+
+```docker exec -it wp_db bash```
+
+```mysql -uwordpress -ppassword```
+
+```create database wordpress;```
+
 exit
 exit
 
-you can create wp-content directory in main directory and store all wp-content in there. Wordpress core is in wp directory and is not stored in this repository (.gitignore) you only store content of wp-content.
+as you can see /wp directory is in .gitignore, only wp-content directory stays in repository, keep your themes, plugins in there.
 
 Visit your wordpress website under ip of docker host
 

@@ -25,8 +25,7 @@ login to wp_db container and create wordpress database
 
 ```create database wordpress;```
 
-exit
-exit
+exit mysql cli and container (```exit exit```)
 
 as you can see /wp directory is in .gitignore, only wp-content directory stays in repository, keep your themes, plugins in there.
 

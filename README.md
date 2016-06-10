@@ -36,9 +36,11 @@ docker beta (native mac) 127.0.0.1
 docker toolbox (virtualbox machine) 192.168.99.100
 
 you can add this ip to your ```/etc/hosts``` to simplify the process, for example:
+
 ```127.0.0.1 wordpress.dev```
 
 inside wp_web container there is wp-cli installed, you can change hostnames in whole database simply by typing:
+
 ``` wp --allow-root --skip-themes search-replace 127.0.0.1 wordpress.dev```
 
 Enjoy!
